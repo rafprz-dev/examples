@@ -1,0 +1,60 @@
+# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+
+# Dependencies (root + each app: shell, mfe1, mfe2, ui)
+node_modules/
+**/node_modules/
+
+# Compiled output
+dist/
+**/dist/
+tmp/
+**/tmp/
+out-tsc/
+**/out-tsc/
+bazel-out/
+**/bazel-out/
+
+# Angular / Native Federation caches and generated artifacts
+.angular/
+**/.angular/
+**/federation.manifest.js
+**/*.tsbuildinfo
+
+# Logs
+npm-debug.log*
+yarn-error.log*
+*.log
+
+# IDEs and editors
+.idea/
+**/.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/mcp.json
+.history/*
+
+# Miscellaneous
+.sass-cache/
+**/.sass-cache/
+connect.lock
+coverage/
+**/coverage/
+libpeerconnection.log
+testem.log
+typings/
+__screenshots__/
+
+# System files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,22 @@
+.mfe1-shell {
+  border: 2px dashed #888;
+  padding: 1rem;
+}
+
+.mfe1-nav {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    padding-bottom: 0.25rem;
+    border-bottom: 2px solid transparent;
+
+    &.active {
+      border-bottom-color: currentColor;
+      font-weight: 600;
+    }
+  }
+}

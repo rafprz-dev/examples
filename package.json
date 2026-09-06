@@ -1,0 +1,17 @@
+{
+  "name": "microfrontend-workspace",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "concurrently -n shell,mfe1,mfe2 -c blue,green,magenta \"npm run start:shell\" \"npm run start:mfe1\" \"npm run start:mfe2\"",
+    "start:shell": "npm --prefix shell start",
+    "start:mfe1": "npm --prefix mfe1 start",
+    "start:mfe2": "npm --prefix mfe2 start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  },
+  "allowScripts": {
+    "puppeteer@25.10.0": true
+  }
+}

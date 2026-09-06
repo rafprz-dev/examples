@@ -1,0 +1,6 @@
+<section class="message-demo">
+  <p>Current shared value: <strong>{{ sharedMessage() }}</strong></p>
+
+  <input #messageInput type="text" placeholder="Message to shell" />
+  <button type="button" (click)="sendToShell(messageInput.value)">Send to shell</button>
+</section>
