@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "concurrently -n shell,mfe1,mfe2 -c blue,green,magenta \"npm run start:shell\" \"npm run start:mfe1\" \"npm run start:mfe2\"",
+    "install:all": "npm install && npm --prefix shell install && npm --prefix mfe1 install && npm --prefix mfe2 install",
+    "start": "npm run install:all && concurrently -n shell,mfe1,mfe2 -c blue,green,magenta \"npm run start:shell\" \"npm run start:mfe1\" \"npm run start:mfe2\"",
     "start:shell": "npm --prefix shell start",
     "start:mfe1": "npm --prefix mfe1 start",
     "start:mfe2": "npm --prefix mfe2 start"
